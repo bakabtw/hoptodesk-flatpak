@@ -7,7 +7,7 @@
 ## Installing dependecnies
 ### Debian/Ubuntu
 ```bash
-apt-get update && apt-get -y install flatpak flatpack-builder
+apt-get update && apt-get -y install flatpak flatpak-builder
 ```
 
 ## Adding Flathub
