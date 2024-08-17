@@ -201,7 +201,8 @@
       "buildsystem" : "simple",
       "sources" : [
         {
-          "path" : "hoptodeskdeb.deb",
+          "url": "https://www.hoptodesk.com/hoptodesk.deb",
+          "sha256": "6fb51d3d61fb82124d153a5f1f554acf72d6597152ed867ab17184b673935ee6",
           "type" : "file"
         },
         {
@@ -216,7 +217,7 @@
         "/share/gtk-doc"
       ],
       "build-commands" : [
-        "bsdtar -zxvf hoptodeskdeb.deb",
+        "bsdtar -zxvf hoptodesk.deb",
         "tar -xvf ./data.tar.xz",
         "cp -r ./usr/*  /app/",
         "cp /app/lib/libsciter-gtk.so  /app/bin/",
