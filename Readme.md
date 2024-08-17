@@ -10,6 +10,11 @@
 apt-get update && apt-get -y install flatpak flatpack-builder
 ```
 
+## Adding Flathub
+```bash
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
 ## Building Flatpak
 ```bash
 flatpak-builder --force-clean --user --install-deps-from=flathub --repo=repo --install builddir com.hoptodesk.HopToDesk.json
